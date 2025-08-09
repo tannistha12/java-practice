@@ -1,4 +1,4 @@
-class main2{
+class countwords{
     public static void main(String[] args) {
         String words = "One Two Three Four Five Six Seven Eight Nine Ten";
         int count = words.split("\\s+").length;
