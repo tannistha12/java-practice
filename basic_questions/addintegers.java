@@ -1,3 +1,4 @@
+package basic_questions;
 import java.util.Scanner;
 class addintegers{
     public static void main(String[] args){

@@ -1,5 +1,6 @@
+package basic_questions;
 //Loop Method
-class main3{
+class reversestring{
     public static void main(String[] args){
         String word = "Tannistha";
         String revered = "";
