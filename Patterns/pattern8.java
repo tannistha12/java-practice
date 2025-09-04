@@ -2,13 +2,29 @@ package Patterns;
 
 public class pattern8 {
     public static void main(String[] args){
-        for (int i = 0; i < 5; i++) {
-            // Print leading spaces
-            for (int j = 0; j < i; j++) {
+        int n = 5;
+
+        // Top half
+        for (int i = 0; i < n; i++) {
+            // spaces
+            for (int j = 0; j < n - i - 1; j++) {
                 System.out.print(" ");
             }
-            // Print stars
-            for (int j = 0; j < (2 * 5 - (2 * i + 1)); j++) {
+            // stars
+            for (int j = 0; j < 2 * i + 1; j++) {
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+
+        // Bottom half
+        for (int i = n - 2; i >= 0; i--) {
+            // spaces
+            for (int j = 0; j < n - i - 1; j++) {
+                System.out.print(" ");
+            }
+            // stars
+            for (int j = 0; j < 2 * i + 1; j++) {
                 System.out.print("*");
             }
             System.out.println();
